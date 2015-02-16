@@ -148,7 +148,7 @@ namespace ZWaveLib.Devices.ProductHandlers.Generic
                         }
                         else
                         {
-                            zvalue = SensorValue.ExtractTemperatureFromBytes(message);
+                            //zvalue = SensorValue.ExtractTemperatureFromBytes(message);
                             // convert from Fahrenheit to Celsius if needed
                             temperature = (zvalue.Scale == (int)ZWaveTemperatureScaleType.Fahrenheit ? SensorValue.FahrenheitToCelsius(zvalue.Value) : zvalue.Value);
                         }
